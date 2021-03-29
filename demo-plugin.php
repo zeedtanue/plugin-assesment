@@ -31,7 +31,7 @@ function my_custom_footer_text( $text ){
 
 add_filter( 'admin_footer_text', 'my_custom_footer_text' );
 
-
+//function for admin bar 
 function my_own_menu(){
     global $wp_admin_bar;
 
