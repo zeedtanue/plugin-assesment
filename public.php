@@ -1,5 +1,5 @@
 <?php
-
+//function for shortcode view
 function email_message_callback(){
     $content = '';
     $content .= '<form method="post" action="http://localhost/wordpress/sample-page/">';
@@ -26,7 +26,9 @@ function get_data(){
         $to = 'hossaintamzeed012@gmail.com';
         $subject = 'test';
         $message = sanitize_text_field( 'message' );
+        //message to show 
         echo '<pre> A message: ';print_r($_POST['message']);echo', has been sent to admin email</pre>';
+        //wp_mail may not work due to local host and not setting up stmp 
         wp_mail( $to, $subject, $message );
     }
 }
