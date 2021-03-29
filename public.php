@@ -1,6 +1,7 @@
 <?php
 //function for shortcode view
 function email_message_callback(){
+    //it can be set with many more field and can be created like a contact us or leave feedback form
     $content = '';
     $content .= '<form method="post" action="http://localhost/wordpress/sample-page/">';
 
